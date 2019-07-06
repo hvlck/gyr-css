@@ -1,0 +1,24 @@
+@import url('/v1.5.0/dist/normalize.css');
+@import url('./modules/form.css');
+@import url('./modules/layout.css');
+@import url('./modules/media.css');
+@import url('./modules/table.css');
+@import url('./modules/type.css');
+
+HTML {
+  scroll-behavior: smooth;
+}
+Body {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 10px;
+  font-display: auto;
+  line-height: 1.4;
+  background: #fafafa;
+  color: #383C41;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+  margin: 1% auto;
+}
