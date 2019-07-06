@@ -1,4 +1,3 @@
-@import url('normalize.css');
 HTML {
   scroll-behavior: smooth;
 }
@@ -146,6 +145,7 @@ button, input, textarea, select {
   background: transparent;
   border: 2px solid #5b626a;
   outline: none;
+  font-size: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 textarea {
