@@ -10,11 +10,11 @@
     "ethan justice",
     "stylesheet"
   ],
-  "homepage": "https://github.com/EthanJustice/Gyr/#readme",
-  "bugs": "https://github.com/EthanJustice/Gyr/issues",
+  "homepage": "https://github.com/EthanJustice/Gyr-CSS/#readme",
+  "bugs": "https://github.com/EthanJustice/Gyr-CSS/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EthanJustice/"
+    "url": "git+https://github.com/EthanJustice/Gyr-CSS"
   },
   "main": "dist/light.css",
   "files": [
