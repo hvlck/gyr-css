@@ -18,4 +18,5 @@ HTML:
 
 ## About
 GitHub Repository: https://github.com/EthanJustice/Gyr
+
 Demo Page: https://ethanjustice.github.io/Gyr/
