@@ -1,0 +1,24 @@
+{
+  "name": "gyr-css",
+  "version": "1.5.0",
+  "description": "A simple, elegant, and classless CSS stylesheet that does the hard work for you.",
+  "author": "Ethan Justice (https://ethanjustice.github.io/)",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "classless-css",
+    "ethan justice",
+    "stylesheet"
+  ],
+  "homepage": "https://github.com/EthanJustice/Gyr/#readme",
+  "bugs": "https://github.com/EthanJustice/Gyr/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanJustice/"
+  },
+  "main": "dist/light.css",
+  "files": [
+    "dist/light.css",
+    "dist/dark.css"
+  ]
+}
