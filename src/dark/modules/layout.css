@@ -1,0 +1,51 @@
+hr {
+  border: 0;
+  border-top: 2px solid #fafafa;
+  width: 75%;
+  margin: 5% auto;
+}
+nav {
+  display: flex;
+  text-align: center;
+  font-size: 150%;
+  margin: 3% auto;
+  padding: 3px;
+  width: 100%;
+}
+nav a {
+  color: #e9e9e9;
+  margin: 0.5% auto;
+  padding: 1px;
+  width: auto;
+  opacity: 0.7;
+  border-bottom: 3px solid transparent;
+}
+nav a:hover {
+  opacity: 1;
+  text-decoration: none;
+  border-bottom: 3px solid mediumspringgreen;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+nav a:not(:hover) { transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) }
+ol, ul { font-size: 120% }
+li { margin: 1% auto }
+::-webkit-input-placeholder { color: #e9e9e9 }
+::-ms-input-placeholder { color: #e9e9e9 }
+::placeholder {
+  color: #e9e9e9;
+}
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track { background: #383C41  }
+::-webkit-scrollbar-thumb { background: #fafafa }
+::-webkit-scrollbar-thumb:hover { background: #fafafa }
+::-moz-selection {
+  background-color: #fafafa;
+  color: #383C41 ;
+}
+::selection {
+  background-color: #fafafa;
+  color: #383C41 ;
+}
