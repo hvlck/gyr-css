@@ -5,6 +5,7 @@ button, input, textarea, select {
   margin: 2% 0;
   background: transparent;
   border: 2px solid #5b626a;
+  border-radius: 0;
   outline: none;
   font-size: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

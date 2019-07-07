@@ -145,6 +145,7 @@ button, input, textarea, select {
   background: transparent;
   color: #fafafa;
   border: 2px solid #fafafa;
+  border-radius: 0;
   outline: none;
   font-size: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
