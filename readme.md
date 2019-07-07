@@ -6,8 +6,7 @@ Gyr-CSS is a classless CSS stylesheet, providing styling rules to save time whil
 NPM:
  ```npm i gyr-css```
  
-HTML:
- ```<link href="https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css" rel="stylesheet" type="text/css" />```
+CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
 
 ## Changelog
 1. Updated readme.md and package.json
