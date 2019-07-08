@@ -10,8 +10,8 @@ CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](http
 
 ## Changelog
 1. Updated readme.md and package.json
-2. Changed official name from Gyr to Gyr-CSS because of NPM package availability
-3. Added dark version
+2. Updated homepage
+3. Disabled textarea horizontal resizing to prevent resizing into the ``<body>`` margin
 
 ## About
 GitHub Repository: [https://github.com/EthanJustice/Gyr-CSS](https://github.com/EthanJustice/Gyr-CSS)
