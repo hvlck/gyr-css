@@ -151,7 +151,8 @@ button, input, textarea, select {
 }
 textarea {
   min-width: 100%;
-  min-height: 6vh;
+  resize: vertical;
+  min-height: 6.5vh;
   margin: 2% 0;
 }
 label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif }
