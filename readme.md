@@ -9,9 +9,10 @@ NPM:
 CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
 
 ## Changelog
-1. Updated readme.md and package.json
-2. Updated homepage
-3. Disabled textarea horizontal resizing to prevent resizing into the ``<body>`` margin
+1. Changed anchor tag hover effect from `text-decoration` to `border-bottom`
+
+## Roadmap
+1. Switch to CSS variables
 
 ## About
 GitHub Repository: [https://github.com/EthanJustice/Gyr-CSS](https://github.com/EthanJustice/Gyr-CSS)
