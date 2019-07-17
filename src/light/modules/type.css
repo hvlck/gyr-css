@@ -34,12 +34,15 @@ p {
 a {
   color: mediumspringgreen;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
   font-size: inherit;
   margin: auto;
 }
 a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid mediumspringgreen;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+a:not(:hover) {transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
 i, em {
   font-size: inherit;
 }
