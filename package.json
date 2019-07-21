@@ -1,6 +1,6 @@
 {
   "name": "gyr-css",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "A simple, elegant, and classless CSS stylesheet that does the hard work for you.",
   "author": "Ethan Justice (https://ethanjustice.github.io/)",
   "license": "MIT",
@@ -19,6 +19,8 @@
   "main": "dist/light.css",
   "files": [
     "dist/light.css",
-    "dist/dark.css"
+    "dist/light.min.css",
+    "dist/dark.css",
+    "dist/dark.min.css"
   ]
 }
