@@ -8,11 +8,13 @@ NPM:
  
 CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
 
-## Changelog
+## Changelog (1.5.6)
 1. Changed anchor tag hover effect from `text-decoration` to `border-bottom`
 
 ## Roadmap
-1. Switch to CSS variables
+1. Switch to CSS variables (in progress)
+2. Revamp dark mode
+3. Fix versioning
 
 ## About
 GitHub Repository: [https://github.com/EthanJustice/Gyr-CSS](https://github.com/EthanJustice/Gyr-CSS)
