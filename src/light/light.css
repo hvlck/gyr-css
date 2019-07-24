@@ -119,6 +119,7 @@ iframe {
 }
 nav {
   display: flex;
+  justify-content: center;
   text-align: center;
   font-size: 150%;
   margin: 3% auto;
@@ -127,7 +128,7 @@ nav {
 }
 nav a {
   color: #383C41;
-  margin: 0.5% auto;
+  margin: 0.5% 2%;
   padding: 1px;
   width: auto;
   opacity: 0.7;
