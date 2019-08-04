@@ -32,5 +32,5 @@ Type
 **Other**
 -Normalize.css - CSS Reset
 -info.md - A list of what stlyling is where
--main.css - A modular version of light.css
+-core.css - A modular version of light.css
 -modules - A folder for all modules
