@@ -49,8 +49,8 @@ kbd {
 }
 code {
   max-width: 100%;
-  padding: 2px 4px;
-  margin: 3% auto;
+  padding: 4px;
+  margin: auto;
   background-color: var(--primary-dark);
   color: var(--highlight);
 }
