@@ -1,28 +1,21 @@
 h1 {
-  font-weight: 700;
-  font-size: 2.75rem;
-  border-bottom: var(--border-lg) solid var(--primary-dark);
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 h1:hover {
   color: var(--highlight);
   transition: var(--primary-transition-duration) var(--transition-type);
 }
 h1:not(:hover) { transition: var(--primary-transition-duration) var(--transition-type) }
-h2 {
-  font-size: 2.25rem;
-  font-weight: 600;
-}
-h3 {
-  font-size: 1.75rem;
-  font-weight: 500;
-}
+h2 { font-size: 2rem }
+h3 { font-size: 1.75rem }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0.75% auto 1.5% auto;
 }
 h4 { font-size: 1.25rem }
 h5 { font-size: 1rem }
-h4, h5, h6 { font-weight: normal }
+h2, h3, h4, h5, h6 { font-weight: normal }
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 105%;
