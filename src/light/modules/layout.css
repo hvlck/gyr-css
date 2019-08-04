@@ -40,7 +40,10 @@ nav a:after {
   content: '';
 }
 nav a:hover:after { transform: scaleX(1) }
-ol, ul { font-size: 120% }
+ol, ul {
+  font-size: 120%;
+  margin: auto -2%;
+}
 li { margin: 1% auto }
 ::-webkit-input-placeholder { color: var(--primary-dark) }
 ::-ms-input-placeholder { color: var(--primary-dark) }

@@ -214,7 +214,10 @@ cite {
   margin: auto;
   display: block;
 }
-ol, ul { font-size: 120% }
+ol, ul {
+  font-size: 120%;
+  margin: auto -2%;
+}
 li { margin: 1% auto }
 ::-webkit-input-placeholder { color: var(--primary-dark) }
 ::-ms-input-placeholder { color: var(--primary-dark) }
