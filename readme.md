@@ -9,10 +9,12 @@ NPM:
 CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
 
 ## Changelog
-1. Changed anchor tag hover effect from `text-decoration` to `border-bottom`
+1. Switched nav to central alignment
+2. Converted to CSS variables
 
 ## Roadmap
-1. Switch to CSS variables
+1. Add dark mode and other themes (solarized, etc.)
+2. Fix versioning
 
 ## About
 GitHub Repository: [https://github.com/EthanJustice/Gyr-CSS](https://github.com/EthanJustice/Gyr-CSS)
