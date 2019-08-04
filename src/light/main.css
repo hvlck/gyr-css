@@ -4,17 +4,32 @@
 @import url('./modules/table.css');
 @import url('./modules/type.css');
 
+:root {
+  --highlight: mediumspringgreen;
+
+  --primary-light: #fafafa;
+  --primary-dark: #383C41;
+  --secondary-dark: #5B626A;
+
+  --border-lg: 3px;
+  --border-med: 2px;
+  --border-sm: 1px;
+
+  --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --primary-transition-duration: 0.5s;
+  --secondary-transition-duration: 0.25s;
+}
 HTML {
   scroll-behavior: smooth;
 }
 Body {
   max-width: 900px;
-  margin: auto;
+  margin: 0.5% auto;
   padding: 0 10px;
   font-display: auto;
   line-height: 1.4;
-  background: #fafafa;
-  color: #383C41;
+  background: var(--primary-light);
+  color: var(--primary-dark);
   text-rendering: optimizeLegibility;
 }
 * {

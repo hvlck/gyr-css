@@ -1,16 +1,13 @@
 h1 {
   font-weight: 700;
   font-size: 2.75rem;
-  border-bottom: 3px solid #383C41;
+  border-bottom: var(--border-lg) solid var(--primary-dark);
 }
 h1:hover {
-  color: mediumspringgreen;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: var(--highlight);
+  transition: var(--primary-transition-duration) var(--transition-type);
 }
-h1:not(:hover) {
-  color: #383C41;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+h1:not(:hover) { transition: var(--primary-transition-duration) var(--transition-type) }
 h2 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -32,20 +29,18 @@ p {
   margin: 1.5% auto;
 }
 a {
-  color: mediumspringgreen;
+  color: var(--highlight);
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: var(--border-med) solid transparent;
   font-size: inherit;
   margin: auto;
 }
 a:hover {
-  border-bottom: 2px solid mediumspringgreen;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: var(--border-med) solid var(--highlight);
+  transition: var(--primary-transition-duration) var(--transition-type);
 }
-a:not(:hover) {transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
-i, em {
-  font-size: inherit;
-}
+a:not(:hover) {transition: var(--primary-transition-duration) var(--transition-type)}
+i, em { font-size: inherit }
 strong, b {
   font-weight: bolder;
   margin: 0;
@@ -56,18 +51,18 @@ small, sub, sup {
   margin: 0;
 }
 kbd {
-  border: 1px solid #383C41;
+  border: var(--border-sm) solid var(--primary-dark);
   padding: 1px 5px;
 }
 code {
   max-width: 100%;
   padding: 2px 4px;
   margin: 3% auto;
-  background-color: #383C41;
-  color: mediumspringgreen;
+  background-color: var(--primary-dark);
+  color: var(--highlight);
 }
 blockquote, q {
-  border: 3px solid #5b626a;
+  border: var(--border-lg) solid var(--secondary-dark);
   text-align: center;
   margin: 3% auto;
   padding: 10px 15px;
