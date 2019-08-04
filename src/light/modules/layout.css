@@ -23,11 +23,23 @@ nav a {
 }
 nav a:hover {
   opacity: 1;
+  border: none;
   text-decoration: none;
-  border-bottom: var(--border-lg) solid var(--highlight);
   transition: var(--primary-transition-duration) var(--transition-type);
 }
-nav a:not(:hover) { transition: var(--primary-transition-duration) var(--transition-type) }
+nav a:not(:hover) {
+  border: none;
+  transition: var(--primary-transition-duration) var(--transition-type)
+}
+nav a:after {
+  display: block;
+  border-bottom: var(--border-lg) solid var(--highlight);
+  transform: scaleX(0);
+  transition: var(--primary-transition-duration) var(--transition-type);
+  transform-origin: 50% 50%;
+  content: '';
+}
+nav a:hover:after { transform: scaleX(1) }
 ol, ul { font-size: 120% }
 li { margin: 1% auto }
 ::-webkit-input-placeholder { color: var(--primary-dark) }
