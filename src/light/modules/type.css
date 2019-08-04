@@ -62,17 +62,15 @@ code {
   color: var(--highlight);
 }
 blockquote, q {
-  border: var(--border-lg) solid var(--secondary-dark);
-  text-align: center;
+  border-left: var(--border-lg) solid var(--secondary-dark);
   margin: 3% auto;
-  padding: 10px 15px;
+  padding: 5px 15px;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-cite::before { content: '-' }
+cite::before { content: '- ' }
 cite {
-  padding: 8px;
+  padding: 4px 0 4px 8px;
   margin: auto;
   display: block;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
