@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  border: var(--border-lg) solid var(--secondary-dark);
+  border-bottom: var(--border-med) solid var(--secondary-dark);  
   padding: 3px 10px;
   margin: 3% auto;
   text-align: center;
@@ -10,7 +10,10 @@ td, th {
   padding: 8px;
   text-align: left;
 }
-th { border-bottom: var(--border-sm) solid var(--secondary-dark) }
+th {
+  border-bottom: var(--border-med) solid var(--secondary-dark);
+  font-size: 125%;
+}
 tr:nth-child(even) {
   background-color: var(--secondary-dark);
   color: var(--primary-light);
