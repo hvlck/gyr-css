@@ -15,6 +15,9 @@
   --border-med: 2px;
   --border-sm: 1px;
 
+  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --secondary-font: Arial, Helvetica, sans-serif;
+
   --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
   --primary-transition-duration: 0.5s;
   --secondary-transition-duration: 0.25s;

@@ -10,14 +10,14 @@ h1:not(:hover) { transition: var(--primary-transition-duration) var(--transition
 h2 { font-size: 2rem }
 h3 { font-size: 1.75rem }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--secondary-font);
   margin: 0.75% auto 1.5% auto;
 }
 h4 { font-size: 1.25rem }
 h5 { font-size: 1rem }
 h2, h3, h4, h5, h6 { font-weight: normal }
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--primary-font);
   font-size: 105%;
   margin: 1.5% auto;
 }
@@ -59,7 +59,7 @@ blockquote, q {
   margin: 3% auto;
   padding: 5px 15px;
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--primary-font);
 }
 cite::before { content: '- ' }
 cite {

@@ -9,6 +9,9 @@
   --border-med: 2px;
   --border-sm: 1px;
 
+  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --secondary-font: Arial, Helvetica, sans-serif;
+
   --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
   --primary-transition-duration: 0.5s;
   --secondary-transition-duration: 0.25s;
@@ -42,14 +45,14 @@ h1:not(:hover) { transition: var(--primary-transition-duration) var(--transition
 h2 { font-size: 2rem }
 h3 { font-size: 1.75rem }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--secondary-font);
   margin: 0.75% auto 1.5% auto;
 }
 h4 { font-size: 1.25rem }
 h5 { font-size: 1rem }
 h2, h3, h4, h5, h6 { font-weight: normal }
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--primary-font);
   font-size: 105%;
   margin: 1.5% auto;
 }
@@ -169,7 +172,7 @@ button, input, textarea, select {
   border-radius: 0;
   outline: none;
   font-size: 100%;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: var(--primary-font);
 }
 textarea {
   min-width: 100%;
@@ -177,7 +180,7 @@ textarea {
   min-height: 6.5vh;
   margin: 2% 0;
 }
-label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif }
+label { font-family: var(--primary-font) }
 input[type='radio'],input[type='checkbox'] {
   display: inline-block;
   margin: 0.5%;
@@ -203,7 +206,7 @@ blockquote, q {
   margin: 3% auto;
   padding: 5px 15px;
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--primary-font);
 }
 cite::before { content: '- ' }
 cite {
