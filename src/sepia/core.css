@@ -39,3 +39,23 @@ Body {
   box-sizing: border-box;
   margin: 1% auto;
 }
+::-webkit-input-placeholder { color: var(--primary-dark) }
+::-ms-input-placeholder { color: var(--primary-dark) }
+::placeholder {
+  color: var(--primary-dark);
+}
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track { background: var(--primary-light) }
+::-webkit-scrollbar-thumb { background: var(--secondary-dark) }
+::-webkit-scrollbar-thumb:hover { background: var(--secondary-dark) }
+::-moz-selection {
+  background-color: var(--secondary-dark);
+  color: var(--primary-light);
+}
+::selection {
+  background-color: var(--secondary-dark);
+  color: var(--primary-light);
+}
