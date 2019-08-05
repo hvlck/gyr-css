@@ -1,9 +1,9 @@
 :root {
   --highlight: mediumspringgreen;
 
+  --primary-dark: #181818;
   --primary-light: #fafafa;
-  --primary-dark: #383C41;
-  --secondary-dark: #5B626A;
+  --secondary-light: #93a1a1;
 
   --border-lg: 3px;
   --border-med: 2px;
@@ -25,8 +25,8 @@ Body {
   padding: 0 10px;
   font-display: auto;
   line-height: 1.4;
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--primary-dark);
+  color: var(--primary-light);
   text-rendering: optimizeLegibility;
 }
 * {
@@ -79,26 +79,26 @@ small, sub, sup {
   margin: 0;
 }
 kbd {
-  border: var(--border-sm) solid var(--primary-dark);
+  border: var(--border-sm) solid var(--primary-light);
   padding: 1px 5px;
 }
 code {
   max-width: 100%;
   padding: 4px;
   margin: auto;
-  background-color: var(--primary-dark);
+  background-color: var(--primary-light);
   color: var(--highlight);
 }
 hr {
   border: 0;
-  border-top: var(--border-med) solid var(--secondary-dark);
+  border-top: var(--border-med) solid var(--secondary-light);
   width: 75%;
   margin: 5% auto;
 }
 table {
   border-collapse: collapse;
   width: 100%;
-  border-bottom: var(--border-med) solid var(--secondary-dark);  
+  border-bottom: var(--border-med) solid var(--secondary-light);  
   padding: 3px 10px;
   margin: 3% auto;
   text-align: center;
@@ -108,12 +108,12 @@ td, th {
   text-align: left;
 }
 th {
-  border-bottom: var(--border-med) solid var(--secondary-dark);
+  border-bottom: var(--border-med) solid var(--secondary-light);
   font-size: 125%;
 }
 tr:nth-child(even) {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
 }
 img {
   max-width: 90%;
@@ -124,7 +124,7 @@ iframe {
   width: 100%;
   height: auto;
   margin: 3% auto;
-  border: var(--border-lg) solid var(--secondary-dark);
+  border: var(--border-lg) solid var(--secondary-light);
 }
 nav {
   display: flex;
@@ -136,7 +136,7 @@ nav {
   width: 100%;
 }
 nav a {
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -168,12 +168,12 @@ button, input, textarea, select {
   padding: 8px;
   margin: 2% 0;
   background: transparent;
-  border: var(--border-med) solid var(--secondary-dark);
+  border: var(--border-med) solid var(--secondary-light);
   border-radius: 0;
   outline: none;
   font-size: 100%;
   font-family: var(--primary-font);
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 textarea {
   min-width: 100%;
@@ -192,9 +192,9 @@ textarea:hover, textarea:focus, input:hover, input:focus {
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
-  border: var(--border-med) solid var(--secondary-dark);
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  border: var(--border-med) solid var(--secondary-light);
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(var(--border-lg)) }
@@ -203,7 +203,7 @@ input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), te
 }
 input[type='radio']:focus, input[type='checkbox']:focus { box-shadow: 0 0 0 1px var(--highlight) }
 blockquote, q {
-  border-left: var(--border-lg) solid var(--secondary-dark);
+  border-left: var(--border-lg) solid var(--secondary-light);
   margin: 3% auto;
   padding: 5px 15px;
   width: 100%;
@@ -220,23 +220,23 @@ ol, ul {
   margin: auto -2%;
 }
 li { margin: 1% auto }
-::-webkit-input-placeholder { color: var(--primary-dark) }
-::-ms-input-placeholder { color: var(--primary-dark) }
+::-webkit-input-placeholder { color: var(--primary-light) }
+::-ms-input-placeholder { color: var(--primary-light) }
 ::placeholder {
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 ::-webkit-scrollbar {
   height: 10px;
   width: 10px;
 }
-::-webkit-scrollbar-track { background: var(--primary-light) }
-::-webkit-scrollbar-thumb { background: var(--secondary-dark) }
-::-webkit-scrollbar-thumb:hover { background: var(--secondary-dark) }
+::-webkit-scrollbar-track { background: var(--primary-dark) }
+::-webkit-scrollbar-thumb { background: var(--secondary-light) }
+::-webkit-scrollbar-thumb:hover { background: var(--secondary-light) }
 ::-moz-selection {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
 }
 ::selection {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
 }

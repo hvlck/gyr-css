@@ -4,12 +4,12 @@ button, input, textarea, select {
   padding: 8px;
   margin: 2% 0;
   background: transparent;
-  border: var(--border-med) solid var(--secondary-dark);
+  border: var(--border-med) solid var(--secondary-light);
   border-radius: 0;
   outline: none;
   font-size: 100%;
   font-family: var(--primary-font);
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 textarea {
   min-width: 100%;
@@ -28,9 +28,9 @@ textarea:hover, textarea:focus, input:hover, input:focus {
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
-  border: var(--border-med) solid var(--secondary-dark);
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  border: var(--border-med) solid var(--secondary-light);
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(var(--border-lg)) }

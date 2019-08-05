@@ -30,5 +30,5 @@ Type
 -Blockquotes and Cite Elements
 
 **Other**
--core.css - A modular version of light.css
+-core.css - A modular version of light-solarized.css
 -modules - A folder for modules used by core.css
