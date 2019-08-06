@@ -5,6 +5,20 @@
     <link id="stylesheet" rel="stylesheet" href="src/light/light.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      Body {
+        animation: 2s fadeIn cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -26,9 +40,22 @@
 
     <a name="demo"></a>
     <h1>Demo</h1>
-    <button onclick="switchTheme()">Switch Theme!</button>
+    <select>
+      <optgroup label="Default">
+        <option value="light.css">Light</option>
+        <option value="dark.css">Dark</option>
+      </optgroup>
+      <optgroup label="Solarized">
+          <option value="light-solarized.css">Light Solarized</option>
+          <option value="dark-solarized.css">Dark Solarized</option>
+      </optgroup>
+      <optgroup label="Other">
+          <option value="sepia.css">Sepia</option>
+      </optgroup>
+    </select>
 
     <h1>Typography</h1>
+    <h1>H1 Element</h1>
     <h2>H2 Element</h2>
     <h3>H3 Element</h3>
     <h4>H4 Element</h4>
@@ -69,13 +96,17 @@
       </tbody>
     </table>
 
+    <h2>Other Elements</h2>
+    <p><code>HR</code> Element</p>
+    <hr>
+
     <h2>Forms</h2>
     <form>
     <input type="button" value="Input Button Element">
     <input type="checkbox" checked>
     <label> 1</label>
     <input type="submit">
-    <input type="number">
+    <input type="number" placeholder="42">
     <p>Radio Input</p>
     <div>
       <input name="radio" type="radio" checked>
@@ -90,7 +121,6 @@
       <label>Option 3</label>
     </div>
     <textarea placeholder="Type something already!" ></textarea>
-    <button type="button">Button (Check the console!)</button>
     </form>
 
     <h2>Unordered Lists</h2>
@@ -125,14 +155,9 @@
     <a href="#">Back to Top</a>
 
   <script>
-    function switchTheme() {
-      let sheet = document.getElementById('stylesheet');
-      let currentSheet = sheet.getAttribute('href');
-      if (currentSheet == 'dist/light.css') {
-        sheet.setAttribute('href', 'dist/dark.css');
-      } else {
-        sheet.setAttribute('href', 'dist/light.css')
-      }
+    document.querySelector('select').oninput = function switchTheme() {
+      let newSheet = 'dist/' + document.querySelector('select').value;
+      document.getElementById('stylesheet').setAttribute('href', newSheet);
     }
   </script>
   </body>
