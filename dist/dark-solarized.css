@@ -112,7 +112,7 @@ th {
   font-size: 125%;
 }
 tr:nth-child(even) {
-  background-color: var(--secondary-light);
+  background-color: var(--primary-light);
   color: var(--primary-dark);
 }
 img {
@@ -237,10 +237,10 @@ li { margin: 1% auto }
 ::-webkit-scrollbar-thumb { background: var(--secondary-light) }
 ::-webkit-scrollbar-thumb:hover { background: var(--secondary-light) }
 ::-moz-selection {
-  background-color: var(--secondary-light);
+  background-color: var(--primary-light);
   color: var(--primary-dark);
 }
 ::selection {
-  background-color: var(--secondary-light);
+  background-color: var(--primary-light);
   color: var(--primary-dark);
 }
