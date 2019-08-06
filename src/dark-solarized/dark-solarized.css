@@ -175,6 +175,10 @@ button, input, textarea, select {
   font-family: var(--primary-font);
   color: var(--primary-light);
 }
+select * {
+  color: var(--primary-dark);
+  background-color: var(--primary-light); 
+}
 textarea {
   min-width: 100%;
   resize: vertical;
