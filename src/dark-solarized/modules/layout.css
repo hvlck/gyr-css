@@ -42,6 +42,6 @@ nav a:after {
 nav a:hover:after { transform: scaleX(1) }
 ol, ul {
   font-size: 120%;
-  margin: auto -2%;
+  margin: auto;
 }
 li { margin: 1% auto }

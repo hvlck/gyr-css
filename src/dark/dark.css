@@ -221,7 +221,7 @@ cite {
 }
 ol, ul {
   font-size: 120%;
-  margin: auto -2%;
+  margin: auto;
 }
 li { margin: 1% auto }
 ::-webkit-input-placeholder { color: var(--primary-light) }
