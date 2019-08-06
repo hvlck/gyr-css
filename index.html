@@ -40,7 +40,19 @@
 
     <a name="demo"></a>
     <h1>Demo</h1>
-    <button onclick="switchTheme()">Switch Theme!</button>
+    <select>
+      <optgroup label="Default">
+        <option value="light.css">Light</option>
+        <option value="dark.css">Dark</option>
+      </optgroup>
+      <optgroup label="Solarized">
+          <option value="light-solarized.css">Light Solarized</option>
+          <option value="dark-solarized.css">Dark Solarized</option>
+      </optgroup>
+      <optgroup label="Other">
+          <option value="sepia.css">Sepia</option>
+      </optgroup>
+    </select>
 
     <h1>Typography</h1>
     <h1>H1 Element</h1>
@@ -143,14 +155,9 @@
     <a href="#">Back to Top</a>
 
   <script>
-    function switchTheme() {
-      let sheet = document.getElementById('stylesheet');
-      let currentSheet = sheet.getAttribute('href');
-      if (currentSheet == 'dist/light.css') {
-        sheet.setAttribute('href', 'dist/dark.css');
-      } else {
-        sheet.setAttribute('href', 'dist/light.css')
-      }
+    document.querySelector('select').oninput = function switchTheme() {
+      let newSheet = 'dist/' + document.querySelector('select').value;
+      document.getElementById('stylesheet').setAttribute('href', newSheet);
     }
   </script>
   </body>
