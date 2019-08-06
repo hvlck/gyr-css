@@ -15,6 +15,6 @@ th {
   font-size: 125%;
 }
 tr:nth-child(even) {
-  background-color: var(--secondary-light);
+  background-color: var(--primary-light);
   color: var(--primary-dark);
 }
