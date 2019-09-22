@@ -5,18 +5,18 @@
 @import url('./modules/type.css');
 
 :root {
-  --highlight: mediumspringgreen;
+  --highlight: #e91640;
 
-  --primary-dark: #181818;
-  --primary-light: #fafafa;
-  --secondary-light: #93a1a1;
+  --primary: #101010;
+  --secondary: #fafafa;
+  --tertiary: #dbdbdb;
 
   --border-lg: 3px;
   --border-med: 2px;
   --border-sm: 1px;
 
-  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --secondary-font: Arial, Helvetica, sans-serif;
+  --text-font: monospace;
+  --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
   --primary-transition-duration: 0.5s;
@@ -31,31 +31,32 @@ Body {
   padding: 0 10px;
   font-display: auto;
   line-height: 1.4;
-  background: var(--primary-dark);
-  color: var(--primary-light);
+  background: var(--primary);
+  color: var(--secondary);
   text-rendering: optimizeLegibility;
 }
 * {
   box-sizing: border-box;
   margin: 1% auto;
 }
-::-webkit-input-placeholder { color: var(--primary-light) }
-::-ms-input-placeholder { color: var(--primary-light) }
+::-webkit-input-placeholder { color: var(--secondary) }
+::-ms-input-placeholder { color: var(--secondary) }
 ::placeholder {
-  color: var(--primary-light);
+  color: var(--secondary);
+  opacity: 0.7;
 }
 ::-webkit-scrollbar {
   height: 10px;
   width: 10px;
 }
-::-webkit-scrollbar-track { background: var(--primary-dark) }
-::-webkit-scrollbar-thumb { background: var(--secondary-light) }
-::-webkit-scrollbar-thumb:hover { background: var(--secondary-light) }
+::-webkit-scrollbar-track { background: var(--primary) }
+::-webkit-scrollbar-thumb { background: var(--tertiary) }
+::-webkit-scrollbar-thumb:hover { background: var(--tertiary) }
 ::-moz-selection {
-  background-color: var(--secondary-light);
-  color: var(--primary-dark);
+  background-color: var(--tertiary);
+  color: var(--primary);
 }
 ::selection {
-  background-color: var(--secondary-light);
-  color: var(--primary-dark);
+  background-color: var(--tertiary);
+  color: var(--primary);
 }

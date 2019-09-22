@@ -1,19 +1,23 @@
 form { width: 100% }
 button, input, textarea, select {
   display: block;
-  padding: 8px;
+  padding: 6px;
   margin: 2% 0;
   background: transparent;
-  border: var(--border-med) solid var(--secondary-dark);
+  border: var(--border-med) solid var(--tertiary);
   border-radius: 0;
   outline: none;
   font-size: 100%;
-  font-family: var(--primary-font);
-  color: var(--primary-dark);
+  font-family: var(--text-font);
+  color: var(--secondary);
+}
+select {
+  border: none;
+  border-bottom: var(--border-med) solid var(--tertiary)
 }
 select * {
-  color: var(--primary-light);
-  background-color: var(--primary-dark); 
+  color: var(--primary);
+  background-color: var(--secondary); 
 }
 textarea {
   min-width: 100%;
@@ -21,7 +25,7 @@ textarea {
   min-height: 6.5vh;
   margin: 2% 0;
 }
-label { font-family: var(--primary-font) }
+label { font-family: var(--text-font) }
 input[type='radio'],input[type='checkbox'] {
   display: inline-block;
   margin: 0.5%;
@@ -32,9 +36,9 @@ textarea:hover, textarea:focus, input:hover, input:focus {
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
-  border: var(--border-med) solid var(--secondary-dark);
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  border: var(--border-med) solid var(--tertiary);
+  background-color: var(--tertiary);
+  color: var(--primary);
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(var(--border-lg)) }

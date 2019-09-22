@@ -1,12 +1,13 @@
 hr {
   border: 0;
-  border-top: var(--border-med) solid var(--secondary-dark);
+  border-top: var(--border-med) solid var(--tertiary);
   width: 75%;
   margin: 5% auto;
 }
 nav {
   display: flex;
   justify-content: center;
+  font-family: var(--heading-font);
   text-align: center;
   font-size: 150%;
   margin: 2% auto;
@@ -14,7 +15,7 @@ nav {
   width: 100%;
 }
 nav a {
-  color: var(--primary-dark);
+  color: var(--secondary);
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -44,4 +45,8 @@ ol, ul {
   font-size: 120%;
   margin: auto;
 }
-li { margin: 1% auto }
+li {
+  font-family: var(--text-font);
+}
+ul li { margin: 1% }
+ol li { margin: 1% 2.5% }

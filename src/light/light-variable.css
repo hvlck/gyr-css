@@ -1,16 +1,16 @@
 :root {
-  --highlight: #cb4b16;
+  --highlight: #00e68e;
 
-  --primary-light: #eee8d5;
-  --primary-dark: #002b36;
-  --secondary-dark: #073642;
+  --primary: #fafafa;
+  --secondary: #383C41;
+  --tertiary: #5B626A;
 
   --border-lg: 3px;
   --border-med: 2px;
   --border-sm: 1px;
 
-  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --secondary-font: Arial, Helvetica, sans-serif;
+  --text-font: monospace;
+  --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
   --primary-transition-duration: 0.5s;
@@ -25,8 +25,8 @@ Body {
   padding: 0 10px;
   font-display: auto;
   line-height: 1.4;
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--secondary);
   text-rendering: optimizeLegibility;
 }
 * {
@@ -35,25 +35,20 @@ Body {
 }
 h1 {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 28pt;
 }
-h1:hover {
-  color: var(--highlight);
-  transition: var(--primary-transition-duration) var(--transition-type);
-}
-h1:not(:hover) { transition: var(--primary-transition-duration) var(--transition-type) }
-h2 { font-size: 2rem }
-h3 { font-size: 1.75rem }
+h2 { font-size: 22pt }
+h3 { font-size: 18pt }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--secondary-font);
+  font-family: var(--heading-font);
   margin: 0.75% auto 1.5% auto;
 }
-h4 { font-size: 1.25rem }
-h5 { font-size: 1rem }
+h4 { font-size: 14pt }
+h5 { font-size: 10pt }
 h2, h3, h4, h5, h6 { font-weight: normal }
 p {
-  font-family: var(--primary-font);
-  font-size: 105%;
+  font-family: var(--text-font);
+  font-size: 12pt;
   margin: 1.5% auto;
 }
 a {
@@ -79,26 +74,26 @@ small, sub, sup {
   margin: 0;
 }
 kbd {
-  border: var(--border-sm) solid var(--primary-dark);
+  border: var(--border-sm) solid var(--secondary);
   padding: 1px 5px;
 }
 code {
   max-width: 100%;
   padding: 4px;
   margin: auto;
-  background-color: var(--primary-dark);
+  background-color: var(--secondary);
   color: var(--highlight);
 }
 hr {
   border: 0;
-  border-top: var(--border-med) solid var(--secondary-dark);
+  border-top: var(--border-med) solid var(--tertiary);
   width: 75%;
   margin: 5% auto;
 }
 table {
   border-collapse: collapse;
   width: 100%;
-  border-bottom: var(--border-med) solid var(--secondary-dark);  
+  border-bottom: var(--border-med) solid var(--tertiary);  
   padding: 3px 10px;
   margin: 3% auto;
   text-align: center;
@@ -108,12 +103,12 @@ td, th {
   text-align: left;
 }
 th {
-  border-bottom: var(--border-med) solid var(--secondary-dark);
+  border-bottom: var(--border-med) solid var(--tertiary);
   font-size: 125%;
 }
 tr:nth-child(even) {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--tertiary);
+  color: var(--primary);
 }
 img {
   max-width: 90%;
@@ -124,11 +119,12 @@ iframe {
   width: 100%;
   height: auto;
   margin: 3% auto;
-  border: var(--border-lg) solid var(--secondary-dark);
+  border: var(--border-lg) solid var(--tertiary);
 }
 nav {
   display: flex;
   justify-content: center;
+  font-family: var(--heading-font);
   text-align: center;
   font-size: 150%;
   margin: 2% auto;
@@ -136,7 +132,7 @@ nav {
   width: 100%;
 }
 nav a {
-  color: var(--primary-dark);
+  color: var(--secondary);
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -165,19 +161,23 @@ nav a:hover:after { transform: scaleX(1) }
 form { width: 100% }
 button, input, textarea, select {
   display: block;
-  padding: 8px;
+  padding: 6px;
   margin: 2% 0;
   background: transparent;
-  border: var(--border-med) solid var(--secondary-dark);
+  border: var(--border-med) solid var(--tertiary);
   border-radius: 0;
   outline: none;
   font-size: 100%;
-  font-family: var(--primary-font);
-  color: var(--primary-dark);
+  font-family: var(--text-font);
+  color: var(--secondary);
+}
+select {
+  border: none;
+  border-bottom: var(--border-med) solid var(--tertiary)
 }
 select * {
-  color: var(--primary-light);
-  background-color: var(--primary-dark); 
+  color: var(--primary);
+  background-color: var(--secondary); 
 }
 textarea {
   min-width: 100%;
@@ -185,7 +185,7 @@ textarea {
   min-height: 6.5vh;
   margin: 2% 0;
 }
-label { font-family: var(--primary-font) }
+label { font-family: var(--text-font) }
 input[type='radio'],input[type='checkbox'] {
   display: inline-block;
   margin: 0.5%;
@@ -196,9 +196,9 @@ textarea:hover, textarea:focus, input:hover, input:focus {
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
-  border: var(--border-med) solid var(--secondary-dark);
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  border: var(--border-med) solid var(--tertiary);
+  background-color: var(--tertiary);
+  color: var(--primary);
   transition: var(--secondary-transition-duration) var(--transition-type);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(var(--border-lg)) }
@@ -207,11 +207,11 @@ input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), te
 }
 input[type='radio']:focus, input[type='checkbox']:focus { box-shadow: 0 0 0 1px var(--highlight) }
 blockquote, q {
-  border-left: var(--border-lg) solid var(--secondary-dark);
+  border-left: var(--border-lg) solid var(--tertiary);
   margin: 3% auto;
   padding: 5px 15px;
   width: 100%;
-  font-family: var(--primary-font);
+  font-family: var(--text-font);
 }
 cite::before { content: '- ' }
 cite {
@@ -223,24 +223,29 @@ ol, ul {
   font-size: 120%;
   margin: auto;
 }
-li { margin: 1% auto }
-::-webkit-input-placeholder { color: var(--primary-dark) }
-::-ms-input-placeholder { color: var(--primary-dark) }
+li {
+  font-family: var(--text-font);
+}
+ul li { margin: 1% }
+ol li { margin: 1% 2.5% }
+::-webkit-input-placeholder { color: var(--secondary) }
+::-ms-input-placeholder { color: var(--secondary) }
 ::placeholder {
-  color: var(--primary-dark);
+  color: var(--secondary);
+  opacity: 0.7;
 }
 ::-webkit-scrollbar {
   height: 10px;
   width: 10px;
 }
-::-webkit-scrollbar-track { background: var(--primary-light) }
-::-webkit-scrollbar-thumb { background: var(--secondary-dark) }
-::-webkit-scrollbar-thumb:hover { background: var(--secondary-dark) }
+::-webkit-scrollbar-track { background: var(--primary) }
+::-webkit-scrollbar-thumb { background: var(--tertiary) }
+::-webkit-scrollbar-thumb:hover { background: var(--tertiary) }
 ::-moz-selection {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--tertiary);
+  color: var(--primary);
 }
 ::selection {
-  background-color: var(--secondary-dark);
-  color: var(--primary-light);
+  background-color: var(--tertiary);
+  color: var(--primary);
 }

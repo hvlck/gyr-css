@@ -5,18 +5,18 @@
 @import url('./modules/type.css');
 
 :root {
-  --highlight: mediumspringgreen;
+  --highlight: #00e68e;
 
-  --primary-light: #fafafa;
-  --primary-dark: #383C41;
-  --secondary-dark: #5B626A;
+  --primary: #fafafa;
+  --secondary: #383C41;
+  --tertiary: #5B626A;
 
   --border-lg: 3px;
   --border-med: 2px;
   --border-sm: 1px;
 
-  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --secondary-font: Arial, Helvetica, sans-serif;
+  --text-font: monospace;
+  --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
   --primary-transition-duration: 0.5s;
@@ -31,8 +31,8 @@ Body {
   padding: 0 10px;
   font-display: auto;
   line-height: 1.4;
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--secondary);
   text-rendering: optimizeLegibility;
 }
 * {
