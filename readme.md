@@ -1,6 +1,6 @@
-# Gyr-CSS
+# gyr-css
 
-Gyr-CSS is a classless CSS stylesheet, providing styling rules to save time while building small, static projects.
+Gyr is a classless CSS stylesheet, providing styling rules to save time while building small, static projects.
 
 ## Usage
 NPM:
@@ -9,17 +9,18 @@ NPM:
 CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
 
 ## Changelog
-1. Converted to CSS variables
-2. Added dark, dark solarized, light solarized, and sepia themes
+1. Removed ugly themes
+2. Changed text font and other properties
 3. Updated readme and demo page
+4. Added variable and non-variable themes
 
 ## Roadmap
 1. Fix versioning
 
 ## About
-GitHub Repository: [https://github.com/EthanJustice/Gyr-CSS](https://github.com/EthanJustice/Gyr-CSS)
+GitHub Repository: [https://github.com/EthanJustice/gyr-css](https://github.com/EthanJustice/gyr-css)
 
-Demo Page: [https://ethanjustice.github.io/Gyr-CSS](https://ethanjustice.github.io/Gyr-CSS)
+Demo Page: [https://ethanjustice.github.io/gyr-css](https://ethanjustice.github.io/gyr-css)
 
 JSDelivr Page: [https://www.jsdelivr.com/package/npm/gyr-css](https://www.jsdelivr.com/package/npm/gyr-css)
 
