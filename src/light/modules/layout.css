@@ -2,7 +2,7 @@ hr {
   border: 0;
   border-top: var(--border-med) solid var(--tertiary);
   width: 75%;
-  margin: 5% auto;
+  margin: 4% auto;
 }
 nav {
   display: flex;
@@ -16,6 +16,7 @@ nav {
 }
 nav a {
   color: var(--secondary);
+  font-family: var(--heading-font);
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -26,17 +27,17 @@ nav a:hover {
   opacity: 1;
   border: none;
   text-decoration: none;
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
 }
 nav a:not(:hover) {
   border: none;
-  transition: var(--primary-transition-duration) var(--transition-type)
+  transition: var(--transition-duration) var(--transition-type)
 }
 nav a:after {
   display: block;
   border-bottom: var(--border-lg) solid var(--highlight);
   transform: scaleX(0);
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
   transform-origin: 50% 50%;
   content: '';
 }

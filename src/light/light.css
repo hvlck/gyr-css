@@ -1,24 +1,4 @@
-:root {
-  --highlight: #00e68e;
-
-  --primary: #fafafa;
-  --secondary: #383C41;
-  --tertiary: #5B626A;
-
-  --border-lg: 3px;
-  --border-med: 2px;
-  --border-sm: 1px;
-
-  --text-font: monospace;
-  --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
-  --primary-transition-duration: 0.5s;
-  --secondary-transition-duration: 0.25s;
-}
-HTML {
-  scroll-behavior: smooth;
-}
+HTML { scroll-behavior: smooth }
 Body {
   max-width: 900px;
   margin: 0.5% auto;
@@ -55,14 +35,15 @@ a {
   color: #00e68e;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  font-family: monospace;
   font-size: inherit;
   margin: auto;
 }
 a:hover {
   border-bottom: 2px solid #00e68e;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
 }
-a:not(:hover) {transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
+a:not(:hover) {transition: 0.25s cubic-bezier(.54,.39,.37,.98)}
 i, em { font-size: inherit }
 strong, b {
   font-weight: bolder;
@@ -88,7 +69,7 @@ hr {
   border: 0;
   border-top: 2px solid #5B626A;
   width: 75%;
-  margin: 5% auto;
+  margin: 4% auto;
 }
 table {
   border-collapse: collapse;
@@ -118,8 +99,8 @@ img {
 iframe {
   width: 100%;
   height: auto;
-  margin: 3% auto;
-  border: 3px solid #5B626A;
+  margin: 1.5% auto;
+  border: none;
 }
 nav {
   display: flex;
@@ -133,6 +114,7 @@ nav {
 }
 nav a {
   color: #383C41;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -143,25 +125,25 @@ nav a:hover {
   opacity: 1;
   border: none;
   text-decoration: none;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
 }
 nav a:not(:hover) {
   border: none;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98)
 }
 nav a:after {
   display: block;
   border-bottom: 3px solid #00e68e;
   transform: scaleX(0);
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
   transform-origin: 50% 50%;
   content: '';
 }
 nav a:hover:after { transform: scaleX(1) }
 form { width: 100% }
-button, input, textarea, select {
+button, input, textarea, select, input[type='button'], input[type='submit'] {
   display: block;
-  padding: 6px;
+  padding: 6px 8px;
   margin: 2% 0;
   background: transparent;
   border: 2px solid #5B626A;
@@ -171,7 +153,13 @@ button, input, textarea, select {
   font-family: monospace;
   color: #383C41;
 }
+input {
+  padding: 6px 0;
+  border: none;
+  border-bottom: 2px solid #5B626A;
+}
 select {
+  padding: 6px 0;
   border: none;
   border-bottom: 2px solid #5B626A
 }
@@ -191,20 +179,22 @@ input[type='radio'],input[type='checkbox'] {
   margin: 0.5%;
 }
 input[type='image'] { max-width: 25% }
-textarea:hover, textarea:focus, input:hover, input:focus {
+textarea:hover, textarea:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus {
   border: 2px solid #00e68e;
-  transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
+}
+input:hover, input:focus {
+  border-bottom: 2px solid #00e68e;
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
   border: 2px solid #5B626A;
   background-color: #5B626A;
   color: #fafafa;
-  transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: 0.25s cubic-bezier(.54,.39,.37,.98);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(3px) }
-input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), textarea:not(:hover), textarea:not(:focus) {
-  transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), textarea:not(:hover), textarea:not(:focus) { transition: 0.25s cubic-bezier(.54,.39,.37,.98) }
 input[type='radio']:focus, input[type='checkbox']:focus { box-shadow: 0 0 0 1px #00e68e }
 blockquote, q {
   border-left: 3px solid #5B626A;

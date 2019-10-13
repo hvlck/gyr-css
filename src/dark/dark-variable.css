@@ -1,7 +1,7 @@
 :root {
-  --highlight: #e91640;
+  --highlight: #00e68e;
 
-  --primary: #101010;
+  --primary: #191e25;
   --secondary: #fafafa;
   --tertiary: #dbdbdb;
 
@@ -12,13 +12,10 @@
   --text-font: monospace;
   --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-  --transition-type: cubic-bezier(0.165, 0.84, 0.44, 1);
-  --primary-transition-duration: 0.5s;
-  --secondary-transition-duration: 0.25s;
+  --transition-type: cubic-bezier(.54,.39,.37,.98);
+  --transition-duration: 0.25s;
 }
-HTML {
-  scroll-behavior: smooth;
-}
+HTML { scroll-behavior: smooth }
 Body {
   max-width: 900px;
   margin: 0.5% auto;
@@ -55,14 +52,15 @@ a {
   color: var(--highlight);
   text-decoration: none;
   border-bottom: var(--border-med) solid transparent;
+  font-family: var(--text-font);
   font-size: inherit;
   margin: auto;
 }
 a:hover {
   border-bottom: var(--border-med) solid var(--highlight);
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
 }
-a:not(:hover) {transition: var(--primary-transition-duration) var(--transition-type)}
+a:not(:hover) {transition: var(--transition-duration) var(--transition-type)}
 i, em { font-size: inherit }
 strong, b {
   font-weight: bolder;
@@ -88,7 +86,7 @@ hr {
   border: 0;
   border-top: var(--border-med) solid var(--tertiary);
   width: 75%;
-  margin: 5% auto;
+  margin: 4% auto;
 }
 table {
   border-collapse: collapse;
@@ -118,8 +116,8 @@ img {
 iframe {
   width: 100%;
   height: auto;
-  margin: 3% auto;
-  border: var(--border-lg) solid var(--tertiary);
+  margin: 1.5% auto;
+  border: none;
 }
 nav {
   display: flex;
@@ -133,6 +131,7 @@ nav {
 }
 nav a {
   color: var(--secondary);
+  font-family: var(--heading-font);
   margin: 0.5% 2%;
   padding: 1px;
   width: auto;
@@ -143,25 +142,25 @@ nav a:hover {
   opacity: 1;
   border: none;
   text-decoration: none;
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
 }
 nav a:not(:hover) {
   border: none;
-  transition: var(--primary-transition-duration) var(--transition-type)
+  transition: var(--transition-duration) var(--transition-type)
 }
 nav a:after {
   display: block;
   border-bottom: var(--border-lg) solid var(--highlight);
   transform: scaleX(0);
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
   transform-origin: 50% 50%;
   content: '';
 }
 nav a:hover:after { transform: scaleX(1) }
 form { width: 100% }
-button, input, textarea, select {
+button, input, textarea, select, input[type='button'], input[type='submit'] {
   display: block;
-  padding: 6px;
+  padding: 6px 8px;
   margin: 2% 0;
   background: transparent;
   border: var(--border-med) solid var(--tertiary);
@@ -171,7 +170,13 @@ button, input, textarea, select {
   font-family: var(--text-font);
   color: var(--secondary);
 }
+input {
+  padding: 6px 0;
+  border: none;
+  border-bottom: var(--border-med) solid var(--tertiary);
+}
 select {
+  padding: 6px 0;
   border: none;
   border-bottom: var(--border-med) solid var(--tertiary)
 }
@@ -191,20 +196,22 @@ input[type='radio'],input[type='checkbox'] {
   margin: 0.5%;
 }
 input[type='image'] { max-width: 25% }
-textarea:hover, textarea:focus, input:hover, input:focus {
+textarea:hover, textarea:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus {
   border: var(--border-med) solid var(--highlight);
-  transition: var(--secondary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
+}
+input:hover, input:focus {
+  border-bottom: var(--border-med) solid var(--highlight);
+  transition: var(--transition-duration) var(--transition-type);
 }
 button:hover, button:focus, input[type='button']:hover, input[type='button']:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
   border: var(--border-med) solid var(--tertiary);
   background-color: var(--tertiary);
   color: var(--primary);
-  transition: var(--secondary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
 }
 button:focus, input[type='button']:focus, input[type='submit']:focus, input[type='reset']:focus { transform: translateY(var(--border-lg)) }
-input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), textarea:not(:hover), textarea:not(:focus) {
-  transition: var(--secondary-transition-duration) var(--transition-type);
-}
+input:not(:hover), input:not(:focus), button:not(:hover), button:not(:focus), textarea:not(:hover), textarea:not(:focus) { transition: var(--transition-duration) var(--transition-type) }
 input[type='radio']:focus, input[type='checkbox']:focus { box-shadow: 0 0 0 1px var(--highlight) }
 blockquote, q {
   border-left: var(--border-lg) solid var(--tertiary);

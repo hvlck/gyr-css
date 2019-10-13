@@ -20,14 +20,15 @@ a {
   color: var(--highlight);
   text-decoration: none;
   border-bottom: var(--border-med) solid transparent;
+  font-family: var(--text-font);
   font-size: inherit;
   margin: auto;
 }
 a:hover {
   border-bottom: var(--border-med) solid var(--highlight);
-  transition: var(--primary-transition-duration) var(--transition-type);
+  transition: var(--transition-duration) var(--transition-type);
 }
-a:not(:hover) {transition: var(--primary-transition-duration) var(--transition-type)}
+a:not(:hover) {transition: var(--transition-duration) var(--transition-type)}
 i, em { font-size: inherit }
 strong, b {
   font-weight: bolder;
