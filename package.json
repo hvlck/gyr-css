@@ -1,8 +1,8 @@
 {
   "name": "gyr-css",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "A simple, elegant, and classless CSS stylesheet that does the hard work for you.",
-  "author": "Ethan Justice (https://ethanjustice.github.io/)",
+  "author": "Ethan Justice",
   "license": "MIT",
   "keywords": [
     "css",
