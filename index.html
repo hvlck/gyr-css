@@ -40,7 +40,7 @@
     <select>
       <optgroup label="Default">
         <option value="light.css">Light</option>
-        <option value="dark.css">Dark</option>
+        <option selected="selected" value="dark.css">Dark</option>
       </optgroup>
       <optgroup label="Solarized">
           <option value="solarized.css">Dark Solarized</option>
@@ -107,25 +107,25 @@
 
     <h2>Forms</h2>
     <form>
-    <input type="button" value="Input Button Element">
-    <input type="checkbox" checked>
-    <label> 1</label>
-    <input type="submit">
-    <input type="number" placeholder="42">
-    <p>Radio Input</p>
-    <div>
-      <input name="radio" type="radio" checked>
-      <label>Option 1</label>
-    </div>
-    <div>
-      <input name="radio" type="radio">
-      <label>Option 2</label>
-    </div>
-    <div>
-      <input disabled name="radio" type="radio">
-      <label>Option 3 (Disabled)</label>
-    </div>
-    <textarea placeholder="Type something already!" ></textarea>
+      <input type="button" value="Input Button Element">
+      <input type="checkbox" checked>
+      <label> 1</label>
+      <input type="submit">
+      <input type="number" placeholder="42">
+      <p>Radio Input</p>
+      <div>
+        <input name="radio" type="radio" checked>
+        <label>Option 1</label>
+      </div>
+      <div>
+        <input name="radio" type="radio">
+        <label>Option 2</label>
+      </div>
+      <div>
+        <input disabled name="radio" type="radio">
+        <label>Option 3 (Disabled)</label>
+      </div>
+      <textarea placeholder="Type something already!" ></textarea>
     </form>
 
     <h2>Unordered Lists</h2>
@@ -160,11 +160,11 @@
 
     <a title="Back to Top" style="cursor:pointer;" onclick="window.scrollTo(0,0)">Back to Top</a>
 
-  <script>
-    document.querySelector('select').oninput = function switchTheme() {
-      let newSheet = 'dist/' + document.querySelector('select').value;
-      document.getElementById('stylesheet').setAttribute('href', newSheet);
-    }
-  </script>
+    <script>
+      document.querySelector('select').oninput = function switchTheme() {
+        let newSheet = 'dist/' + document.querySelector('select').value;
+        document.getElementById('stylesheet').setAttribute('href', newSheet);
+      }
+    </script>
   </body>
 </html>
