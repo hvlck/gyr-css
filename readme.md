@@ -1,6 +1,6 @@
 # gyr-css
 
-Gyr is a classless CSS stylesheet, providing styling rules to save time while building small, static projects.
+Gyr is a small, elegant, and classless stylesheet.
 
 ## Usage
 
