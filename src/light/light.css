@@ -1,35 +1,25 @@
-HTML {
-	scroll-behavior: smooth;
-	border-top: 2px solid #16c581;
-	margin: 0;
-}
-Body {
-	max-width: 1000px;
-	margin: 0.5% auto;
-	padding: 0 10px;
-	font-display: auto;
-	font-weight: 600;
-	line-height: 1.4;
-	background: #fafafa;
-	background-image: radial-gradient(#e1e1e1 1px, transparent 0);
-	background-size: 35px 35px;
-	color: #676767;
-	text-rendering: optimizeLegibility;
+body {
+    margin: 0 auto;
+    padding: 10px;
+    background: #fafafa;
+    color: #212121;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    overflow-x: hidden;
 }
 * {
-	transition: 0.2s cubic-bezier(0.54, 0.39, 0.37, 0.98);
-	box-sizing: border-box;
-	margin: 1% auto;
+    transition: cubic-bezier(0.54, 0.39, 0.37, 0.98) 150ms;
 }
-h1 {
-	font-weight: 500;
-	font-size: 28pt;
+nav a {
+    margin: auto 2% auto 0;
 }
-h2 {
-	font-size: 22pt;
+a,
+a:visited {
+    color: #007500;
+    text-decoration: none;
 }
-h3 {
-	font-size: 18pt;
+a:hover {
+    text-decoration: underline;
 }
 h1,
 h2,
@@ -37,132 +27,91 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	margin: 0.75% auto 1.5% auto;
+    margin: 0.75% auto 1.5% auto;
 }
-h4 {
-	font-size: 14pt;
-}
-h5 {
-	font-size: 10pt;
-}
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
+    font-weight: normal;
 }
 p {
-	font-family: "Consolas", monospace;
-	font-size: 12pt;
-	margin: 1.5% auto;
-}
-a,
-a:visited {
-	color: #16c581;
-	text-decoration: none;
-	border-bottom: 2px solid #e1e1e1;
-	font-family: "Consolas", monospace;
-	font-size: inherit;
-	margin: auto;
-}
-a:hover {
-	border-bottom: 2px solid #16c581;
+    font-size: var(--font-sm);
+    margin: 1.5% auto;
 }
 i,
 em {
-	font-size: inherit;
+    font-size: inherit;
 }
 strong,
 b {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	font-weight: 800;
-	font-size: 110%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 110%;
 }
 small {
-	font-size: 75%;
+    font-size: 75%;
 }
 kbd {
-	border: 1px solid #676767;
-	padding: 1px 5px;
-	font-family: "Consolas", monospace;
+    border: 1px solid #212121;
+    padding: 1px 5px;
+    font-family: "Consolas", monospace;
 }
 code {
-	max-width: 100%;
-	padding: 2px 6px;
-	margin: auto;
-	background-color: #e1e1e1;
-	color: #16c581;
-	font-family: "Consolas", monospace;
+    max-width: 100%;
+    padding: 2px 6px;
+    margin: auto;
+    background-color: #e1e1e1;
+    color: #007500;
+    font-weight: 600;
+    font-family: "Consolas", monospace;
 }
 hr {
-	border: 0;
-	border-top: 2px solid #e1e1e1;
-	width: 75%;
-	margin: 4% auto;
+    border: 0;
+    border-top: 2px solid #e1e1e1;
+    width: 75%;
+    margin: 4% auto;
 }
 table {
-	border-collapse: collapse;
-	width: 100%;
-	border-bottom: 2px solid #e1e1e1;
-	padding: 3px 10px;
-	margin: 3% auto;
-	text-align: center;
-	font-family: "Consolas", monospace;
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 2px solid #e1e1e1;
+    padding: 3px 10px;
+    margin: 3% auto;
+    text-align: center;
 }
 td,
 th {
-	padding: 8px;
-	text-align: left;
+    padding: 8px;
+    text-align: left;
 }
 th {
-	background: #fafafa;
-	position: sticky;
-	top: 0;
-	z-index: 2;
-	padding: 3px;
-	border-bottom: 3px solid #e1e1e1;
-	font-size: 16pt;
+    background: #fafafa;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 5px;
+    border-top: 3px solid #e1e1e1;
+    font-size: var(--font-lg);
 }
-tr:nth-child(even) {
-	background-color: #e1e1e1;
+tr:nth-child(odd) {
+    background-color: #e1e1e1;
 }
 img {
-	max-width: 90%;
-	height: auto;
-	margin: 1.5% auto;
+    max-width: 90%;
+    height: auto;
+    margin: 1.5% auto;
 }
 iframe {
-	width: 100%;
-	height: auto;
-	margin: 1.5% auto;
-	border: none;
-}
-nav {
-	margin: 2% auto 2% 0;
-	padding: 3px 3px 3px 0;
-	width: 100%;
-}
-nav a,
-nav a:visited {
-	color: #676767 !important;
-	font-family: "Consolas", monospace;
-	font-size: 14pt;
-	margin: 0.5% 2% 0.5% 0%;
-	padding: 1px;
-	width: auto;
-	opacity: 0.7;
-	border: none;
-}
-nav a:hover {
-	opacity: 1;
-	border: none;
-	color: #16c581 !important;
-	text-decoration: none;
+    width: 100%;
+    height: auto;
+    margin: 1.5% auto;
+    border: none;
 }
 form {
-	width: 100%;
+    width: 100%;
 }
 button,
 input,
@@ -170,143 +119,163 @@ textarea,
 select,
 input[type="button"],
 input[type="submit"] {
-	display: block;
-	padding: 7.5px 10px;
-	margin: 2% 0;
-	background: #e1e1e1;
-	outline: none;
-	border: none;
-	font-size: 12pt;
-	font-family: "Consolas", monospace;
-	font-weight: bold;
-	color: #676767;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    margin: 2% 0;
+    background: #e1e1e1;
+    outline: none;
+    border: none;
+    font-size: var(--font-sm);
+    font-weight: bold;
+    font-family: "Consolas", monospace;
+    color: #212121;
 }
 select {
-	padding: 6px 0;
-	border: none;
-	border-bottom: 2px solid #e1e1e1;
+    padding: 6px;
+    border: 2px solid transparent;
 }
 select * {
-	color: #676767;
-	background-color: #fafafa;
+    color: #212121;
+    background-color: #fafafa;
+}
+select:hover,
+select:focus {
+    border: 2px solid #007500;
 }
 textarea {
-	min-width: 100%;
-	resize: vertical;
-	min-height: 36px;
-	margin: 2% 0;
-	opacity: 0.7;
-	transition: 0.2s linear;
-}
-label {
-	font-family: "Consolas", monospace;
+    min-width: 90%;
+    resize: vertical;
+    min-height: 36px;
+    margin: 2% 0;
+    opacity: 0.7;
+    transition-property: opacity;
 }
 input[type="radio"],
 input[type="checkbox"] {
-	background: #e1e1e1;
-	padding: 3px;
-	display: inline-block;
-	margin: 0.5%;
+    background: #e1e1e1;
+    padding: 3px;
+    display: inline-block;
+    margin: 0.5%;
+}
+* > input[type="checkbox"] {
+    margin: 0;
+    padding: 10px;
+    font-size: 14pt;
+    width: 2px;
+    height: 2px;
+    position: relative;
+    color: #e1e1e1;
+    background-color: #e1e1e1;
+    box-sizing: content-box;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+* > input[type="checkbox"]:checked {
+    background-color: #007500;
+}
+* > input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(25%, -10%);
 }
 input[type="image"] {
-	max-width: 25%;
+    max-width: 25%;
 }
 textarea:hover,
 textarea:focus {
-	opacity: 1;
+    opacity: 1;
 }
 button:hover,
 button:focus,
 input:hover,
 input:focus {
-	background-color: #16c581;
-	color: #e1e1e1;
+    background-color: #007500;
+    color: #e1e1e1;
 }
 button:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus {
-	transform: translateY(3px);
+    transform: translateY(3px);
 }
 input[type="number"] {
-	border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 input[type="number"]:hover,
 input[type="number"]:focus {
-	background-color: #e1e1e1;
-	color: #676767;
-	border-bottom: 2px solid #16c581;
+    background-color: #e1e1e1;
+    color: #212121;
+    border-bottom: 2px solid #007500;
 }
 input:invalid {
-	border: none;
-	background: crimson;
-	color: #fafafa;
+    border: none;
+    background: crimson;
+    color: #fafafa;
 }
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-	box-shadow: 0 0 0 1px #16c581;
+    box-shadow: 0 0 0 1px #007500;
 }
 blockquote,
 q {
-	border-left: 3px solid #e1e1e1;
-	margin: 3% 5%;
-	padding: 5px 15px;
-	width: 100%;
-	font-size: 12pt;
-	font-family: "Consolas", monospace;
+    border-left: 3px solid #e1e1e1;
+    margin: 3% 5%;
+    padding: 5px 15px;
+    width: 90%;
+    font-size: var(--font-sm);
 }
 cite::before {
-	content: "- ";
+    content: "- ";
 }
 cite {
-	padding: 4px 0 4px 8px;
-	margin: auto;
-	display: block;
+    padding: 4px 0 4px 8px;
+    margin: auto;
+    display: block;
 }
 ol,
 ul {
-	margin: auto;
-}
-li {
-	font-family: "Consolas", monospace;
+    margin: auto;
 }
 ul li {
-	margin: 1%;
+    margin: 1%;
 }
 ol li {
-	margin: 1% 2.5%;
+    margin: 1% 2.5%;
 }
 :disabled {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 ::-webkit-input-placeholder {
-	color: #676767;
+    color: #212121;
 }
 ::placeholder {
-	color: #676767;
-	opacity: 0.7;
+    color: #212121;
+    opacity: 0.7;
 }
 ::-webkit-scrollbar {
-	height: 10px;
-	width: 10px;
+    height: 10px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
-	background: #fafafa;
+    background: #fafafa;
 }
 ::-webkit-scrollbar-thumb {
-	background: #e1e1e1;
+    background: #e1e1e1;
 }
 ::-moz-selection {
-	background-color: #16c581;
-	color: #fafafa;
+    background-color: #007500;
+    color: #fafafa;
 }
 ::selection {
-	background-color: #16c581;
-	color: #fafafa;
+    background-color: #007500;
+    color: #fafafa;
 }

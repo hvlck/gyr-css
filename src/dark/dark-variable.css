@@ -178,7 +178,6 @@ input[type="checkbox"] {
     display: inline-block;
     margin: 0.5%;
 }
-
 * > input[type="checkbox"] {
     margin: 0;
     padding: 10px;
@@ -193,11 +192,9 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     cursor: pointer;
 }
-
 * > input[type="checkbox"]:checked {
     background-color: var(--highlight);
 }
-
 * > input[type="checkbox"]:checked::after {
     content: "✓";
     position: absolute;
