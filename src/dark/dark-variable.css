@@ -113,11 +113,11 @@ th {
     position: sticky;
     top: 0;
     z-index: 2;
-    padding: 3px;
-    border-bottom: var(--border-lg) solid var(--tertiary);
+    padding: 5px;
+    border-top: var(--border-lg) solid var(--tertiary);
     font-size: var(--font-lg);
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: var(--tertiary);
 }
 img {
@@ -177,6 +177,33 @@ input[type="checkbox"] {
     padding: 3px;
     display: inline-block;
     margin: 0.5%;
+}
+
+* > input[type="checkbox"] {
+    margin: 0;
+    padding: 10px;
+    font-size: 14pt;
+    width: 2px;
+    height: 2px;
+    position: relative;
+    color: var(--tertiary);
+    background-color: var(--tertiary);
+    box-sizing: content-box;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+* > input[type="checkbox"]:checked {
+    background-color: var(--highlight);
+}
+
+* > input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(25%, -10%);
 }
 input[type="image"] {
     max-width: 25%;
