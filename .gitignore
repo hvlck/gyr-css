@@ -1,0 +1,3 @@
+*.draft.md
+
+node_modules/
