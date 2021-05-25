@@ -1,249 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <title>Gyr</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Gyr | Classless CSS" />
-        <meta
-            name="keywords"
-            content="ethan justice,gyr,css,stylesheet,classless stylesheet"
-        />
-        <meta name="author" content="Ethan Justice" />
-        <link id="stylesheet" rel="stylesheet" href="dist/dark-variable.css" />
-        <style>
-            body {
-                animation: 300ms fadeIn cubic-bezier(0.54, 0.39, 0.37, 0.98);
-            }
-
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1;
-                }
-            }
-        </style>
+        <meta name="keywords" content="hvlck,gyr,css,stylesheet,classless stylesheet" />
+        <meta name="author" content="hvlck" />
+        <link rel="stylesheet" href="./src/index.css" type="text/css" />
     </head>
 
     <body>
-        <h1>Gyr</h1>
+        <header>
+            <nav>
+                <a href="#demo">Demo</a>
+                <a href="https://github.com/hvlck/gyr-css">Github</a>
+            </nav>
 
-        <nav>
-            <a href="#about">About Gyr</a>
-            <a href="#demo">Demo</a>
-            <a href="https://github.com/EthanJustice/gyr-css">Github</a>
-        </nav>
+            <h1>Gyr</h1>
 
-        <div>
-            <h1 id="about">About</h1>
             <p>
                 Gyr automatically styles many common HTML elements with a
                 simple, elegant theme. Just place the link in your
                 <code>head</code> tag, and you're good to go!
             </p>
             <p>
-                <a href="https://github.com/EthanJustice/Gyr-CSS"
-                    >Get Started Here</a
-                >
+                <a href="https://github.com/hvlck/gyr-css">Get Started Here</a>
             </p>
-        </div>
+        </header>
 
-        <a name="demo"></a>
-        <h1>Demo</h1>
-        <label for="select-example">Select Theme</label>
-        <select id="select-example">
-            <optgroup label="Default">
-                <option value="light.css">Light</option>
-                <option selected="selected" value="dark.css">Dark</option>
-            </optgroup>
-        </select>
+        <main>
 
-        <h1>H1 Element</h1>
-        <h2>H2 Element</h2>
-        <h3>H3 Element</h3>
-        <h4>H4 Element</h4>
-        <h5>H5 Element</h5>
-        <h6>H6 Element</h6>
-        <a href="#">A Link for Demonstration Purposes</a>
-        <p><i>Italicized</i> text.</p>
-        <p><b>Bold</b> text.</p>
-        <p><sup>Superscript</sup> text.</p>
-        <p><sub>Subscript</sub> text.</p>
-        <p><small>Small</small> text.</p>
-        <p><del>Deleted</del> text.</p>
-        <p><mark>Marked</mark> text.</p>
-        <p>
-            Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+            <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gyr-css@1.6.5/dist/index.css&quot; type=&quot;text/css&quot; /&gt;</code></pre>
 
-        <h2>Images</h2>
-        <img src="https://placedog.net/221" alt="Dog!" />
-        <p>
-            A dog courtesy of
-            <a href="https://placedog.net/">https://placedog.net!</a>
-        </p>
+            <a name="demo"></a>
+            <label for="select-example">Select Theme</label>
+            <select id="select-example">
+                <optgroup label="Default">
+                    <option value="light.css">Light</option>
+                    <option selected="selected" value="dark.css">Dark</option>
+                </optgroup>
+            </select>
 
-        <h2>Tables</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Item 1</td>
-                    <td>Item 2</td>
-                    <td>Item 3</td>
-                </tr>
-                <tr>
-                    <td>Item 1</td>
-                    <td>Item 2</td>
-                    <td>Item 3</td>
-                </tr>
-                <tr>
-                    <td>Item 1</td>
-                    <td>Item 2</td>
-                    <td>Item 3</td>
-                </tr>
-            </tbody>
-        </table>
+            <h1>H1 Element</h1>
+            <h2>H2 Element</h2>
+            <h3>H3 Element</h3>
+            <h4>H4 Element</h4>
+            <h5>H5 Element</h5>
+            <h6>H6 Element</h6>
+            <a href="#">A Link for Demonstration Purposes</a>
+            <p><i>Italicized</i> text.</p>
+            <p><b>Bold</b> text.</p>
+            <p><sup>Superscript</sup> text.</p>
+            <p><sub>Subscript</sub> text.</p>
+            <p><small>Small</small> text.</p>
+            <p><del>Deleted</del> text.</p>
+            <p><mark>Marked</mark> text.</p>
+            <p>
+                Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
 
-        <h2>Forms</h2>
-        <form>
-            <label for="inp-button-example"
-                >Example
-                <code>&lt;input type="button" /&gt;</code> element</label
-            >
-            <input
-                id="inp-button-example"
-                type="button"
-                value="Input Button Element"
-            />
-            <label
-                >Example
-                <code>&lt;input type="checkbox" /&gt;</code> element<br
-            /></label>
+            <details>
+                <summary>An example <code>details</code>/<code>summary</code></summary>
+                <p>With some hidden text inside, too!</p>
+            </details>
+
+            <h2>Images</h2>
+            <img src="https://placedog.net/221" alt="Dog!" />
+            <p>
+                A dog courtesy of
+                <a href="https://placedog.net/">https://placedog.net!</a>
+            </p>
+
+            <h2>Tables</h2>
             <table>
                 <thead>
-                    <th>Name</th>
-                    <th>On/Off</th>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                            <label for="checkbox-example">
-                                Some Checkbox Setting</label
-                            ><br />
-                        </td>
-                        <td>
-                            <input
-                                id="checkbox-example"
-                                type="checkbox"
-                                checked
-                            />
-                        </td>
+                        <td>Item 1</td>
+                        <td>Item 2</td>
+                        <td>Item 3</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>Item 2</td>
+                        <td>Item 3</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>Item 2</td>
+                        <td>Item 3</td>
                     </tr>
                 </tbody>
             </table>
-            <label for="inp-submit-example"
-                >Example
-                <code>&lt;input type="submit" /&gt;</code> element</label
-            >
-            <input id="inp-submit-example" type="submit" />
-            <label for="inp-num-example"
-                >Example
-                <code>&lt;input type="number" /&gt;</code> element</label
-            >
-            <input id="inp-num-example" type="number" placeholder="42" />
-            <label for="inp-reset-example"
-                >Example
-                <code>&lt;input type="reset" /&gt;</code> element</label
-            >
-            <input id="inp-reset-example" type="reset" />
-            <label
-                >Example
-                <code>&lt;input type="radio" /&gt;</code> element</label
-            >
-            <div>
-                <input id="radio-one" name="radio" type="radio" checked />
-                <label for="radio-one">Option 1</label>
-            </div>
-            <div>
-                <input id="radio-two" name="radio" type="radio" />
-                <label for="radio-two">Option 2</label>
-            </div>
-            <div>
-                <input id="radio-three" disabled name="radio" type="radio" />
-                <label for="radio-three">Option 3 (Disabled)</label>
-            </div>
-            <label for="txtarea"
-                >Example <code>&lt;textarea /&gt;</code> element</label
-            >
-            <textarea
-                id="txtarea"
-                placeholder="Type something already!"
-            ></textarea>
-        </form>
 
-        <h2>Unordered Lists</h2>
-        <ul>
-            <li>Unordered List Item 1</li>
-            <li>Unordered List Item 2</li>
-            <li>Unordered List Item 3</li>
-            <li>Unordered List Item 4</li>
-        </ul>
+            <h2>Forms</h2>
+            <form>
+                <fieldset>
+                    <legend>Group of Related Items</legend>
+                    <button>Normal <code>button</code></button>
+                    <input id="inp-button-example" type="button" value="Input Button Element" />
+                    <div>
+                        <input id="checkbox-example" type="checkbox" checked />
+                        <label>Example
+                            <code>&lt;input type="checkbox" /&gt;</code> element<br /></label>
+                    </div>
+                    <input id="inp-submit-example" type="submit" />
+                </fieldset>
+                <div>
+                    <label for="inp-num-example">Pick a number, any number</label>
+                </div>
+                <input id="inp-num-example" type="number" placeholder="42" />
+                <input id="inp-reset-example" type="reset" />
+                <label>Example
+                    <code>&lt;input type="radio" /&gt;</code> element</label>
+                <div>
+                    <input id="radio-one" name="radio" type="radio" checked />
+                    <label for="radio-one">Option 1</label>
+                </div>
+                <div>
+                    <input id="radio-two" name="radio" type="radio" />
+                    <label for="radio-two">Option 2</label>
+                </div>
+                <div>
+                    <input id="radio-three" disabled name="radio" type="radio" />
+                    <label for="radio-three">Option 3 (Disabled)</label>
+                </div>
+                <label for="txtarea">Example <code>&lt;textarea /&gt;</code> element</label>
+                <textarea id="txtarea" placeholder="Type something already!"></textarea>
+            </form>
 
-        <h2>Ordered Lists</h2>
-        <ol>
-            <li>Ordered List Item 1</li>
-            <li>Ordered List Item 2</li>
-            <li>Ordered List Item 3</li>
-            <li>Ordered List Item 4</li>
-        </ol>
+            <h2>Dialogs</h2>
+            <button onclick="this.nextElementSibling.showModal()">Open dialog</button>
+            <dialog>
+                <header>Welcome to my <code>dialog</code>.</header>
+                <p>Here you'll find quite a lot of information.</p>
+                <p>For instance:</p>
+                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur."
+                </p>
+                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur."
+                </p>
+                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur."
+                </p>
+                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur."
+                </p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
 
-        <h2>Code and Keyboard Input (KBD)</h2>
-        <code>console.log("Awesome!");</code>
-        <kbd>KBD</kbd>
+            <h2>Unordered Lists</h2>
+            <ul>
+                <li>Unordered List Item 1</li>
+                <li>Unordered List Item 2</li>
+                <li>Unordered List Item 3</li>
+                <li>Unordered List Item 4</li>
+            </ul>
 
-        <h2>Blockquotes</h2>
-        <blockquote>
-            "Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur."
-            <cite>Placeholder Text</cite>
-        </blockquote>
+            <h2>Ordered Lists</h2>
+            <ol>
+                <li>Ordered List Item 1</li>
+                <li>Ordered List Item 2</li>
+                <li>Ordered List Item 3</li>
+                <li>Ordered List Item 4</li>
+            </ol>
 
-        <h2>Other Elements</h2>
-        <p><code>&lt;HR&gt;</code> Element</p>
-        <hr />
+            <code>console.log("Awesome!");</code>
+            <kbd>KBD</kbd>
 
-        <a title="Back to Top" style="cursor: pointer;" href="#">Back to Top</a>
+            <h2>Other Elements</h2>
+            <p><code>&lt;HR&gt;</code> Element</p>
+            <hr />
+
+            <h2>Blockquotes</h2>
+            <blockquote>
+                "Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur."
+                <cite>Placeholder Text</cite>
+            </blockquote>
+
+        </main>
+
+        <footer>
+            <a title="Back to Top" href="#">Back to Top</a>
+            <a href="https://github.com/hvlck/gyr-css">GitHub</a>
+            <a href="https://www.npmjs.com/package/gyr-css">NPM</a>
+            <a href="https://www.jsdelivr.com/package/npm/gyr-css">JSDelivr</a>
+            <a href="https://unpkg.com/browse/gyr-css@latest/">Unpkg</a>
+        </footer>
 
         <script>
             document
                 .querySelector("select")
                 .addEventListener("input", function () {
                     let newSheet =
-                        "dist/" + document.querySelector("select").value;
+                        "src/" + document.querySelector("select").value;
                     document
                         .getElementById("stylesheet")
                         .setAttribute("href", newSheet);
                 });
         </script>
     </body>
+
 </html>

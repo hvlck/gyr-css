@@ -1,0 +1,462 @@
+:root {
+    --yellow: #ffc02c;
+    --orange: #ff7250;
+    --green: #15ffb6;
+    --blue: #15d3ff;
+    --mid-blue: #5086ff;
+    --dark-blue: #155eff;
+    --purple: #b615ff;
+    --red: #ff155e;
+
+    --dark-one: #141414;
+    --dark-two: #212121;
+    --dark-three: #3a3a3a;
+    --dark-four: #474747;
+
+    --light-one: #eee;
+    --light-two: #ddd;
+    --light-three: #c8c8c8;
+    --light-four: #7a7a7a;
+
+    --border-normal: 2px;
+    --border-large: 6px;
+    --border-radius: 8px;
+
+    --highlight: var(--blue);
+    --highlight-dark: var(--purple);
+
+    --headings-text: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --body-text: Arial, Helvetica, sans-serif;
+
+    --primary: var(--light-one);
+    --secondary: var(--dark-one);
+    --tertiary: var(--dark-two);
+    --quaternary: var(--light-two);
+    --quinary: var(--light-four);
+    --senary: var(--light-three);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: var(--dark-one);
+        --secondary: var(--light-one);
+        --tertiary: var(--light-three);
+        --quaternary: var(--dark-two);
+        --quinary: var(--light-four);
+        --senary: var(--dark-four);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+    }
+}
+
+body {
+    padding: 10px;
+    max-width: 900px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin: 0 auto;
+    font-family: var(--body-text);
+    line-height: 1.6;
+    font-size: 1.25rem;
+}
+
+* {
+    transition: 100ms linear;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    margin: 1.4rem 0;
+    font-size: 2.441rem;
+}
+
+h3 {
+    margin: 1.12rem 0;
+    font-size: 1.953rem;
+}
+
+h4 {
+    margin: 0.896rem 0;
+    font-size: 1.563rem;
+}
+
+h5 {
+    margin: 0.7168rem 0;
+    font-size: 1.25rem;
+}
+
+h6 {
+    margin: 0.7168rem 0;
+    font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--tertiary);
+    font-weight: 600;
+    font-family: var(--headings-text);
+}
+
+mark {
+    background-color: var(--yellow);
+    color: var(--primary);
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid var(--quaternary);
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 1px;
+}
+
+a {
+    color: var(--mid-blue);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--purple);
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+
+    margin: 0 !important;
+    padding: 0.5rem 0;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+nav a,
+nav a:visited {
+    font-size: 1.5rem;
+}
+
+nav a,
+nav a:visited,
+footer a {
+    font-weight: bold;
+    margin: 0 1.5rem 0 0;
+}
+
+nav:first-child {
+    margin-left: 0.6rem;
+}
+
+nav a,
+nav a:visited,
+footer a {
+    color: var(--mid-blue);
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+header {
+    border-bottom: var(--border-large) solid var(--quaternary);
+}
+
+footer,
+nav {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+nav {
+    justify-content: flex-start;
+    padding: 0.5rem 0;
+    border-bottom: var(--border-large) solid var(--quaternary);
+}
+
+footer {
+    border-top: var(--border-large) solid var(--quaternary);
+}
+
+input,
+select,
+button {
+    box-sizing: border-box;
+
+    background-color: var(--quaternary);
+    color: var(--secondary);
+    outline: none;
+    border: none;
+
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.12rem;
+    border: var(--border-normal) solid transparent;
+}
+
+select:hover {
+    border: var(--border-normal) solid var(--senary);
+}
+
+input:hover {
+    border: var(--border-normal) solid var(--quinary);
+}
+
+input:focus {
+    border: var(--border-normal) solid var(--quinary);
+}
+
+input:invalid {
+    border: var(--border-normal) solid var(--red) !important;
+}
+
+fieldset {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--tertiary);
+    border: var(--border-normal) solid var(--senary);
+    border-radius: var(--border-radius);
+}
+
+legend {
+    font-size: 1.6rem;
+    color: var(--tertiary);
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    color: var(--light-one);
+    border: var(--border-normal) solid var(--dark-blue);
+    background-color: var(--dark-blue);
+}
+
+:disabled {
+    opacity: 0.7;
+}
+
+:disabled:hover {
+    cursor: not-allowed;
+    border: var(--border-normal) solid var(--quaternary) !important;
+    background-color: var(--quaternary) !important;
+}
+
+label {
+    margin: 0.5rem 0;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="checkbox"] ~ label,
+input[type="radio"] ~ label {
+    display: inline;
+}
+
+label a {
+    text-decoration: none;
+}
+
+textarea {
+    width: 90%;
+
+    min-height: 100px;
+    border: var(--border-normal) solid transparent;
+    font-size: 1.25rem;
+    font-family: var(--body-text);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+    color: var(--secondary);
+    background-color: var(--quaternary);
+
+    overflow: scroll;
+    resize: vertical;
+}
+
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border: var(--border-normal) solid var(--quinary);
+}
+
+details {
+    background-color: var(--quaternary);
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+}
+
+summary {
+    border-bottom: var(--border-normal) solid var(--senary);
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1.25rem;
+    outline: none;
+}
+
+summary:focus {
+    box-shadow: var(--shadow);
+}
+
+details:target {
+    box-shadow: 0 0 0 var(--border-radius) var(--senary);
+}
+
+table,
+thead,
+tbody {
+    overflow: scroll;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: scroll;
+}
+
+thead {
+    border-bottom: var(--border-normal) solid var(--senary);
+}
+
+th {
+    padding: 0.5rem;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: var(--tertiary);
+    background-color: var(--quaternary);
+}
+
+td {
+    color: var(--tertiary);
+    padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+    background-color: var(--quaternary);
+}
+
+tr:last-child {
+    border-bottom: var(--border-normal) solid var(--senary);
+}
+
+blockquote {
+    margin: 0.5rem 0;
+    background-color: var(--quaternary);
+    border-left: 3px solid var(--senary);
+    padding: 1rem;
+}
+
+cite::before {
+    content: "- ";
+}
+
+cite {
+    display: block;
+}
+
+pre code {
+    border-radius: 0;
+    border: var(--border-normal) solid var(--senary);
+    width: 100%;
+    overflow: scroll;
+    display: block;
+}
+
+pre code::before,
+pre code::after {
+    content: "";
+}
+
+code {
+    border-radius: var(--border-radius);
+    padding: 0.5rem 0.5rem;
+    background-color: var(--quaternary);
+    color: var(--orange);
+    font-family: "Consolas", monospace;
+}
+
+code::before,
+code::after {
+    content: "`";
+}
+
+kbd {
+    background-color: var(--quaternary);
+    color: var(--tertiary);
+    padding: 0.5rem 1rem;
+    border: var(--border-normal) solid var(--quinary);
+    border-radius: var(--border-radius);
+}
+
+dialog {
+    width: 900px;
+    max-height: 600px;
+    border: var(--border-normal) solid var(--senary);
+    color: var(--secondary);
+    background-color: var(--quaternary);
+    padding: 0 1rem;
+    overflow: scroll;
+}
+
+dialog header {
+    box-sizing: border-box;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: var(--border-large) solid var(--senary);
+}
+
+dialog button,
+dialog input,
+dialog select {
+    border: var(--border-normal) solid var(--senary);
+}
+
+::background {
+    opacity: 0;
+}
