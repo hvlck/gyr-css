@@ -1,20 +1,32 @@
 # gyr-css
 
-Gyr is a small, elegant, and classless stylesheet.
+Gyr is a small, elegant, and classless stylesheet. Import it, and forget about CSS.
+
+[Repository](https://github.com/hvlck/gyr-css) | [Demo](https://hvlck.github.io/gyr-css) | [Package](https://www.npmjs.com/package/gyr-css)
+
+gyr is small at [1.7kB gzipped + minified](https://bundlephobia.com/result?p=gyr-css@1.7.0)
 
 ## Usage
 
-NPM:
- ```npm i gyr-css```
+### NPM
 
-CDN: [```https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css```](https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/light.min.css)
+To install `gyr-css` through `npm` or `yarn`, run the following:
 
-## About
+```npm i gyr-css```
 
-GitHub Repository: [https://github.com/EthanJustice/gyr-css](https://github.com/EthanJustice/gyr-css)
+```yarn add gyr-css```
 
-Demo Page: [https://ethanjustice.github.io/gyr-css](https://ethanjustice.github.io/gyr-css)
+### CDNs
 
-JSDelivr Page: [https://www.jsdelivr.com/package/npm/gyr-css](https://www.jsdelivr.com/package/npm/gyr-css)
+Import the following into your HTML's `<head>`
 
-NPM Page: [https://www.npmjs.com/package/gyr-css](https://www.npmjs.com/package/gyr-css)
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/index.css" type="text/css" />
+<link rel="stylesheet" href="https://unpkg.com/browse/gyr-css@latest/" type="text/css" />
+```
+
+## Influences
+
+The following had an influence on the design of gyr:
+
++ [GOV.UK Design System](https://design-system.service.gov.uk/get-started/)
