@@ -29,4 +29,6 @@ Import the following into your HTML's `<head>`
 
 The following had an influence on the design of gyr:
 
++ [DevDocs API Documentation](https://devdocs.io/)
 + [GOV.UK Design System](https://design-system.service.gov.uk/get-started/)
++ [Jim Nielsen’s Blog](https://blog.jim-nielsen.com/)
