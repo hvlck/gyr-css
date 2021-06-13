@@ -3,20 +3,20 @@
     --orange: #ff7250;
     --green: #15ffb6;
     --blue: #15d3ff;
-    --mid-blue: #5086ff;
+    --mid-blue: #3d81c8;
     --dark-blue: #155eff;
     --purple: #b615ff;
     --red: #ff155e;
 
-    --dark-one: #141414;
-    --dark-two: #212121;
-    --dark-three: #3a3a3a;
-    --dark-four: #474747;
+    --dark-one: #1a1b20;
+    --dark-two: #25272e;
+    --dark-three: #31333c;
+    --dark-four: #3c3f4a;
 
-    --light-one: #eee;
-    --light-two: #ddd;
-    --light-three: #c8c8c8;
-    --light-four: #7a7a7a;
+    --light-one: #ededed;
+    --light-two: #e0e0e0;
+    --light-three: #d4d4d4;
+    --light-four: #7b7b7b;
 
     --border-small: 1px;
     --border-normal: 2px;
@@ -56,8 +56,10 @@
 
 body {
     background-color: var(--primary);
-    color: var(--secondary);
-    margin: 0;
+    color: var(--tertiary);
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: hidden;
     font-family: var(--body-text);
     line-height: 1.8;
     font-size: 1.25rem;
@@ -65,12 +67,6 @@ body {
 
 body > * {
     padding: 10px;
-}
-
-body > *:not(header),
-body > *:not(footer) {
-    margin: 0 auto;
-    max-width: 900px;
 }
 
 p {
@@ -113,7 +109,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--tertiary);
+    color: var(--secondary);
     font-weight: 600;
     font-family: var(--headings-text);
 }
@@ -149,64 +145,32 @@ nav a,
 nav a:visited,
 footer a,
 footer a:visited {
-    font-size: 1.25rem;
     color: var(--tertiary);
     margin: 0 1.5rem 0 0;
     text-decoration: none;
-}
-
-nav:first-child {
-    margin-left: 0.6rem;
 }
 
 nav a:hover,
 footer a:hover {
     opacity: 1;
     text-decoration: none;
-    color: var(--orange);
+    color: var(--mid-blue);
 }
 
 header {
-    border-bottom: var(--border-small) solid var(--quaternary);
+    border-bottom: var(--border-normal) solid var(--quaternary);
     margin: 0;
-    padding: 0 0 1rem 0;
-}
-
-header,
-header nav,
-footer,
-footer nav {
-    box-sizing: border-box;
-    margin: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-header > :not(nav) {
-    max-width: 900px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-nav {
-    width: 100%;
+    padding: 0 unset 1rem unset;
 }
 
 footer,
 nav {
     margin: 1rem 0 0 0;
-    padding: 1rem 2rem;
-
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    justify-content: flex-start;
-    align-content: center;
 }
 
 nav {
     justify-content: flex-start;
-    border-bottom: var(--border-small) solid var(--quaternary);
+    border-bottom: var(--border-normal) solid var(--quaternary);
 }
 
 footer {
@@ -233,10 +197,7 @@ select:hover {
     border: var(--border-normal) solid var(--senary);
 }
 
-input:hover {
-    border: var(--border-normal) solid var(--quinary);
-}
-
+input:hover,
 input:focus {
     border: var(--border-normal) solid var(--quinary);
 }
@@ -323,7 +284,7 @@ textarea {
     color: var(--secondary);
     background-color: var(--quaternary);
 
-    overflow: scroll;
+    overflow-y: auto;
     resize: vertical;
 }
 
@@ -358,11 +319,10 @@ details:target {
 table,
 thead,
 tbody {
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    overflow: scroll;
 }
 
 thead {
@@ -388,8 +348,9 @@ tr {
 
 blockquote {
     margin: 0.5rem 0;
+    color: var(--secondary);
     background-color: var(--quaternary);
-    border-left: 3px solid var(--orange);
+    border-left: 3px solid var(--mid-blue);
     padding: 1rem;
 }
 
@@ -405,7 +366,7 @@ pre code {
     border-radius: 0;
     border: var(--border-normal) solid var(--senary);
     max-width: 100%;
-    overflow: scroll;
+    overflow: auto;
     display: block;
 }
 
@@ -442,14 +403,14 @@ dialog {
     color: var(--secondary);
     background-color: var(--quaternary);
     padding: 0 1rem;
-    overflow: scroll;
+    overflow: auto;
 }
 
 dialog header {
     box-sizing: border-box;
     padding: 1rem 0;
     width: 100%;
-    border-bottom: var(--border-large) solid var(--senary);
+    border-bottom: var(--border-normal) solid var(--senary);
 }
 
 dialog button,
