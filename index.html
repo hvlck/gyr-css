@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Gyr</title>
+        <title>gyr.css</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Gyr | Classless CSS" />
@@ -25,31 +25,19 @@
                 simple, elegant theme. Just place the link in your
                 <code>head</code> tag, and you're good to go!
             </p>
-            <p>Gyr is <a href="https://bundlephobia.com/result?p=gyr-css@1.7.0">1.7kB gzipped + minfied</a>.</p>
-            <p>
-                <a href="https://github.com/hvlck/gyr-css">Get Started Here</a>
-            </p>
+            <p>Gyr is fairly small and <a href="https://bundlephobia.com/result?p=gyr-css@latest">lightweight</a>. <a href="https://github.com/hvlck/gyr-css">Get started here</a> or scroll down for a demo.</p>
+            <p>Dark mode can be toggled on/off using your system preferences, or the browser theme on Firefox. Motion can be disabled by turning on your device's reduced motion settings.</p>
         </header>
 
-        <main>
-            <h2>Stylings</h2>
-            <a id="demo"></a>
-            <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gyr-css@1.6.5/dist/index.css&quot; type=&quot;text/css&quot; /&gt;</code></pre>
+        <hr>
 
-            <label for="select-example">Select Theme</label>
-            <select id="select-example">
-                <optgroup label="Default">
-                    <option value="light.css">Light</option>
-                    <option selected="selected" value="dark.css">Dark</option>
-                </optgroup>
-            </select>
-
-            <h1>H1 Element</h1>
-            <h2>H2 Element</h2>
-            <h3>H3 Element</h3>
-            <h4>H4 Element</h4>
-            <h5>H5 Element</h5>
-            <h6>H6 Element</h6>
+        <main id="demo">
+            <h1>H1 header</h1>
+            <h2>H2 header</h2>
+            <h3>H3 header</h3>
+            <h4>H4 header</h4>
+            <h5>H5 header</h5>
+            <h6>H6 header</h6>
             <a href="#">A Link for Demonstration Purposes</a>
             <p><i>Italicized</i> text.</p>
             <p><b>Bold</b> text.</p>
@@ -72,13 +60,6 @@
                 <summary>An example <code>details</code>/<code>summary</code></summary>
                 <p>With some hidden text inside, too!</p>
             </details>
-
-            <h2>Images</h2>
-            <img src="https://placedog.net/221" alt="Dog!" />
-            <p>
-                A dog courtesy of
-                <a href="https://placedog.net/">https://placedog.net!</a>
-            </p>
 
             <h2>Tables</h2>
             <table>
@@ -111,8 +92,16 @@
             <h2>Forms</h2>
             <form>
                 <fieldset>
-                    <legend>Group of Related Items</legend>
+                    <legend><code>Fieldset</code> and <code>legend</code></legend>
                     <button>Normal <code>button</code></button>
+                    <select id="select-example">
+                        <optgroup label="Default">
+                            <option>Option one</option>
+                            <option selected="selected">Option two</option>
+                            <option disabled>Disabled option</option>
+                        </optgroup>
+                    </select>
+                    <br>
                     <input id="inp-button-example" type="button" value="Input Button Element" />
                     <div>
                         <input id="checkbox-example" type="checkbox" checked />
@@ -122,10 +111,11 @@
                     <input id="inp-submit-example" type="submit" />
                 </fieldset>
                 <div>
-                    <label for="inp-num-example">Pick a number, any number</label>
+                    <label for="inp-num-example">Pick a number, any number (negative numbers throw an error - check it out!)</label>
                 </div>
-                <input id="inp-num-example" type="number" placeholder="42" />
+                <input id="inp-num-example" type="number" placeholder="42" min="0" />
                 <input id="inp-reset-example" type="reset" />
+                <br>
                 <label>Example
                     <code>&lt;input type="radio" /&gt;</code> element</label>
                 <div>
@@ -148,33 +138,27 @@
             <button onclick="this.nextElementSibling.showModal()">Open dialog</button>
             <dialog>
                 <header>
-                    <p>Welcome to my <code>dialog</code>.</p>
+                    <h2>Welcome to <i>the</i> <code>dialog</code>.</h2>
                 </header>
                 <p>Here you'll find quite a lot of information.</p>
                 <p>For instance:</p>
                 <p>These are the instructions to install <code>gyr-css</code>, again:</p>
-                <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gyr-css@1.6.5/dist/index.css&quot; type=&quot;text/css&quot; /&gt;</code></pre>
-                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gyr-css@latest/dist/index.css&quot; type=&quot;text/css&quot; /&gt;</code></pre>
+                <p>Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+                <blockquote>Same thing again, this time as a quote: "Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur."
-                </p>
-                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur."
-                </p>
-                <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur."
-                </p>
+                    <cite>Marcus Aurelius</cite>
+                </blockquote>
                 <p>"Laurem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -191,15 +175,26 @@
             <ul>
                 <li>Unordered List Item 1</li>
                 <li>Unordered List Item 2</li>
-                <li>Unordered List Item 3</li>
+                <ul>
+                    <li>Nested list item 1</li>
+                    <li>Nested list item 2</li>
+                </ul>
                 <li>Unordered List Item 4</li>
             </ul>
 
             <h2>Ordered Lists</h2>
             <ol>
                 <li>Ordered List Item 1</li>
+                <ul>
+                    <li>Nested list item 1</li>
+                    <li>Nested list item 2</li>
+                </ul>
                 <li>Ordered List Item 2</li>
                 <li>Ordered List Item 3</li>
+                <ol>
+                    <li>Nested list item 1</li>
+                    <li>Nested list item 2</li>
+                </ol>
                 <li>Ordered List Item 4</li>
             </ol>
 
@@ -230,18 +225,6 @@
             <a href="https://www.jsdelivr.com/package/npm/gyr-css">JSDelivr</a>
             <a href="https://unpkg.com/browse/gyr-css@latest/">Unpkg</a>
         </footer>
-
-        <script>
-            document
-                .querySelector("select")
-                .addEventListener("input", function () {
-                    let newSheet =
-                        "src/" + document.querySelector("select").value;
-                    document
-                        .getElementById("stylesheet")
-                        .setAttribute("href", newSheet);
-                });
-        </script>
     </body>
 
 </html>
