@@ -4,21 +4,11 @@ Gyr is a small, elegant, and classless stylesheet. Import it, and forget 
 
 [Repository](https://github.com/hvlck/gyr-css) | [Demo](https://hvlck.github.io/gyr-css) | [Package](https://www.npmjs.com/package/gyr-css)
 
-gyr is small at [1.7kB gzipped + minified](https://bundlephobia.com/result?p=gyr-css@1.7.0)
-
 ## Usage
-
-### NPM
-
-To install `gyr-css` through `npm` or `yarn`, run the following:
-
-```npm i gyr-css```
-
-```yarn add gyr-css```
 
 ### CDNs
 
-Import the following into your HTML's `<head>`
+Import either of the following into your `<head>` to import `gyr` from a CDN:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gyr-css@latest/dist/index.css" type="text/css" />
@@ -29,6 +19,4 @@ Import the following into your HTML's `<head>`
 
 The following had an influence on the design of gyr:
 
-+ [DevDocs API Documentation](https://devdocs.io/)
 + [GOV.UK Design System](https://design-system.service.gov.uk/get-started/)
-+ [Jim Nielsen’s Blog](https://blog.jim-nielsen.com/)
