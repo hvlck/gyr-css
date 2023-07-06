@@ -355,7 +355,6 @@ tr:last-child {
 
 blockquote {
     margin: 2rem 5rem;
-    color: var(--secondary);
     border-left: 2px solid var(--senary);
     padding: 1rem 0 0 1rem;
 }
@@ -395,6 +394,7 @@ dialog {
     color: var(--tertiary);
     background-color: var(--primary-dim);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 0 3rem;
 }
 
@@ -422,7 +422,7 @@ img {
 
 @media screen and (max-width:800px) {
     blockquote {
-        margin: 0;
+        margin: 2rem 0 2rem 0;
     }
 
     dialog {
