@@ -23,6 +23,6 @@
         "dist/index.css"
     ],
     "devDependencies": {
-        "esbuild": "^0.12.2"
+        "esbuild": "^0.25.0"
     }
 }
