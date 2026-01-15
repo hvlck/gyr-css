@@ -1,5 +1,7 @@
 # gyr-css
 
+**IMPORTANT**: gyr-css is no longer maintained.
+
 Gyr is a small, elegant, and classless stylesheet. Import it, and forget about CSS.
 
 [Repository](https://github.com/hvlck/gyr-css) | [Demo](https://hvlck.github.io/gyr-css) | [Package](https://www.npmjs.com/package/gyr-css)
